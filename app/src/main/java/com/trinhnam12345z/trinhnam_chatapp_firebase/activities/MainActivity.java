@@ -1,8 +1,10 @@
-package com.trinhnam12345z.trinhnam_chatapp_firebase;
+package com.trinhnam12345z.trinhnam_chatapp_firebase.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.trinhnam12345z.trinhnam_chatapp_firebase.R;
 
 public class MainActivity extends AppCompatActivity {
 
