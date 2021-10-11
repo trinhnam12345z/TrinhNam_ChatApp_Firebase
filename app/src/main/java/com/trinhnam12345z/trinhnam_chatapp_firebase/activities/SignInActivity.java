@@ -1,16 +1,11 @@
 package com.trinhnam12345z.trinhnam_chatapp_firebase.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.trinhnam12345z.trinhnam_chatapp_firebase.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.trinhnam12345z.trinhnam_chatapp_firebase.databinding.ActivitySignInBinding;
-
-import java.util.HashMap;
 
 public class SignInActivity extends AppCompatActivity {
     private ActivitySignInBinding binding;
@@ -26,21 +21,7 @@ public class SignInActivity extends AppCompatActivity {
     private void setListeners(){
         binding.textCreateNewAccount.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), SignUpActivity.class)));
-        binding.buttonSignIn.setOnClickListener(v -> addDataToFirestore());
     }
 
-    private void  addDataToFirestore(){
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        HashMap<String, Object> data = new HashMap<>();
-        data.put("first_name","Trinh");
-        data.put("last_name","Nam");
-        database.collection("users")
-                .add(data)
-                .addOnSuccessListener(documentReference -> {
-                    Toast.makeText(getApplicationContext(),"Data insert ",Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(exception -> {
-                    Toast.makeText(getApplicationContext(),exception.getMessage(),Toast.LENGTH_SHORT).show();
-                });
-    }
+
 }
