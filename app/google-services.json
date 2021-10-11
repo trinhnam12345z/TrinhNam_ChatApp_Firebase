@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "937937824731",
+    "project_id": "trinh-nam-chat-app-firebase",
+    "storage_bucket": "trinh-nam-chat-app-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937937824731:android:1710a35106d6d03ddf95fe",
+        "android_client_info": {
+          "package_name": "com.trinhnam12345z.trinhnam_chatapp_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937937824731-ngmrunhm7p3ev7pu4jtrf3pqlq8ifd64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW3BU2mj8Euig6kEB1BgkCbJHM60MrEEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937937824731-ngmrunhm7p3ev7pu4jtrf3pqlq8ifd64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
