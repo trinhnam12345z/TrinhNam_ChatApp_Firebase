@@ -52,7 +52,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:23.0.4'
     // Cau hinh MultiDex
     implementation "androidx.multidex:multidex:2.0.1"
+    //Retrofit https://topdev.vn/blog/retrofit-trong-android/
+    // https://guides.codepath.com/android/consuming-apis-with-retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+
+
     // Fix error [Method getAlpnSelectedProtocol not supported for object SSL socket over Socket]
     implementation "io.grpc:grpc-okhttp:1.32.2"
+
 
 }
