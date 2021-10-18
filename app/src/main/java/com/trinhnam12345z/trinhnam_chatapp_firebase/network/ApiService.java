@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 
 public interface ApiService {
 
-    @POST
+    @POST("send") //Update Handling User Availability
     Call<String> sendMessage(
             @HeaderMap HashMap<String, String> header,
             @Body String messageBody
